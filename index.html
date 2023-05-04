@@ -40,11 +40,11 @@
   <header class="container-fluid">
     <section class="row">
 
-      <div class="d-flex justify-content-around pt-3">
-        <p>Name</p>
-        <p>Qty</p>
-        <p>Each</p>
-        <p>Total</p>
+      <div class="d-flex justify-content-evenly pt-3 me-5">
+        <p class="col-3">Name</p>
+        <p class="col-3">Qty</p>
+        <p class="col-3">Each</p>
+        
       </div>
 
     </section>
@@ -55,51 +55,49 @@
 
   <main class="container-fluid">
     <!-- Cart Checkout -->
-    <section class="col-md-5">
-      <div class="border border-white cart d-flex flex-column justify-content-between pb-2">
-
-        <div class="pt-2" id="cart">
+    <section class="col-12">
+      <div class="cart d-flex flex-column justify-content-between pb-2">
+        <div class="text-end pe-2" id="cart">
         </div>
-
-        <div class="text-end pe-2">
-          <p>TOTAL: $<span id="total">0</span></p>
-          <button class="btn btn-info" onclick="checkout()">Checkout</button>
-        </div>
+        <button class="btn btn-info col-2" onclick="checkout()">Checkout</button>
       </div>
+      <p class="">TOTAL: $<span id="total">0</span></p>
     </section>
 
     <!-- Purchases -->
     <section class="row">
       <p>Cones</p>
-      
+
       <div class="col-6">
         <img src="https://m.media-amazon.com/images/I/71VNjBMakfL._SL1500_.jpg" alt="">
         <p>Waffle Cone</p>
         <button onclick="buyCone('Waffle Cone')">$2</button>
       </div>
-      
+
       <div class="col-6">
         <img src="http://images.wbmason.com/350/L_JOY66050.jpg" alt="">
         <p>Waffle Bowl</p>
         <button onclick="buyCone('Waffle Bowl')">$4</button>
       </div>
     </section>
-    
+
     <section class="row">
       <p>Ice Cream</p>
-      
+
       <div class="col-4">
         <img src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt="">
         <p>Cookie Dough</p>
         <button onclick="buyCream('Cookie Dough')">$1</button>
       </div>
-      
+
       <div class="col-4">
-        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg" alt="">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
+          alt="">
         <p>Vanilla</p>
         <button onclick="buyCream('Vanilla')">$1</button>
       </div>
-      
+
       <div class="col-4">
         <img src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg" alt="">
         <p>Strawberry</p>
@@ -108,23 +106,23 @@
 
       <section class="row">
         <h3>Toppings</h3>
-  
+
         <div class="col-6">
           <img
             src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/chocolate-chips.jpg?quality=82&strip=1&resize=640%2C360"
             alt="">
           <p>Chocolate Chips</p>
-          <button onclick="buyTop('Chocolate Chips')">$1</button>
+          <button onclick="buyTop('Chocolate Chips')">$2</button>
         </div>
-        
+
         <div class="col-6">
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg" alt="">
           <p>Sprinkles</p>
-          <button onclick="buyTop('Sprinkles')">$2</button>
+          <button onclick="buyTop('Sprinkles')">$1</button>
         </div>
-        
+
       </section>
-      
+
     </section>
 
 

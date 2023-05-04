@@ -3,3 +3,7 @@ img{
   max-width: 10em;
   object-fit: cover;
 }
+
+.cart{
+  min-height: 15em;
+}
